@@ -21,9 +21,10 @@
         <div class="float-box-on-page box-3"></div>
         <div class="auth-box">
             <div class=" heading">
-                <h1 class="title ">Log In</h1>
+                <h1 class="title ">Sign Up</h1>
                 <strong class=" sub-title ">
-                    <p class="M">I don’t have an account !
+                    <p class="M">Parents<br/>
+                        I have an account
                         <a href="/sign-up">Sign Up</a>
                     </p>
                 </strong>
@@ -31,17 +32,35 @@
             <form>
                 <div class="form-holder">
                     <div class="input-group mb-3">
+                        <input placeholder="Name" aria-invalid="false" name="email" type="text"
+                               class="px-2 py-3 MuiInputBase-input MuiFilledInput-input d-block " value="">
+                    </div>
+                    <div class="input-group mb-3">
                         <input placeholder="Email" aria-invalid="false" name="email" type="email"
                                class="px-2 py-3 MuiInputBase-input MuiFilledInput-input d-block " value="">
                     </div>
+
                     <div class="input-group mb-3">
                         <input placeholder="password" aria-invalid="false" name="password" type="password"
                                class="px-2 py-3 MuiInputBase-input MuiFilledInput-input d-block " value="">
                     </div>
 
-                    <a href="/reset-password">
-                        <p class="float-end">Forgot Password?</p>
-                    </a>
+                    <label class="mt-2 mb-3 control-check-box">
+                        <span class="MuiIconButton-label">
+                        <input class="jss11"
+                               name="agreementStatus"
+                               type="checkbox"
+                               data-indeterminate="false"
+                               value="">
+                        </span>
+                        <span
+                                class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"><span
+                                class="MuiTypography-root aggrement-text MuiTypography-body1">I accept all
+                            <a  href="/term-of-services">Term of services
+                            </a> and <a
+                                    href="/privacy-and-policy">Privacy And Policy</a>.</span>
+                        </span>
+                    </label>
 
                     <button class="MuiButton-contained form-submit-button MuiButton-containedPrimary MuiButton-disableElevation"
                             tabindex="0" type="submit"><span class="MuiButton-label">Sign In</span><span
