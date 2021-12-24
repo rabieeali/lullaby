@@ -198,3 +198,133 @@ button.MuiButton-contained.form-submit-button.MuiButton-containedPrimary.MuiButt
     background: linear-gradient(
             45deg, #6a5edd, #348078 100%, #00d4ff 0);
 }
+
+
+/*sttatic page*/
+
+.static-page a {
+    color: #ff0080;
+}
+
+.jss16 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header-items .auth-button, .welcome-text {
+    white-space: nowrap;
+}
+
+.main-header-items .auth-button {
+    font-weight: 700;
+    border-width: 2px !important;
+    border-radius: 16px;
+}
+
+.MuiButton-outlinedPrimary {
+    color: #ff0084;
+    border: 1px solid rgba(255, 0, 132, 0.5);
+}
+
+.MuiButton-outlined {
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    padding: 5px 15px;
+}
+
+.main-footer {
+    padding: 48px 0;
+    background-color: #f72585;
+}
+
+.copy-rights {
+    padding: 24px 0;
+    background-color: #cf0662;
+    color: #fff;
+}
+
+.main-footer ul a {
+    padding: 4px 0;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+}
+
+.footer-menus li {
+    display: inline-flex;
+}
+
+.footer-menu-holder ul {
+    margin-top: 16px;
+}
+
+.main-footer ul {
+    margin-top: 44px;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-menus {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.section-heading-bold.font-size-32 > * {
+    font-size: 32px !important;
+}
+
+.footer-menu-holder {
+    margin-top: 48px;
+}
+
+.static-page p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, .64);
+    margin-bottom: 24px;
+}
+
+.copy-rights p {
+    margin-bottom: 0 !important;
+}
+
+.main-header-items .auth-button {
+    font-weight: 700;
+    border-width: 2px !important;
+    border-radius: 16px;
+}
+
+.MuiButton-outlinedPrimary {
+    color: #ff0084;
+    border: 1px solid rgba(255, 0, 132, 0.5);
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-footer .logo {
+    width: 100px;
+}
+
+.main-header-items .logo {
+    max-width: 100px;
+}
+.main-header-items .auth-button {
+    font-weight: 700;
+    border-width: 2px!important;
+    border-radius: 16px;
+}
+.main-header-items .auth-button {
+    font-weight: 700;
+    border-width: 2px!important;
+    border-radius: 16px;
+}
+.MuiButton-outlinedPrimary {
+    color: #ff0084;
+    border: 1px solid rgba(255, 0, 132, 0.5);
+}
+.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.auth-button.MuiButton-outlinedPrimary {
+    background: #fff;
+    border-radius: 16px;
+}
