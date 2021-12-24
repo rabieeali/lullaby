@@ -1,0 +1,192 @@
+/*sign up*/
+.float-box-on-page.box-1, .float-box-on-page.box-2 {
+    -webkit-transform: rotate(
+            -45deg);
+    transform: rotate(
+            -45deg);
+}
+
+.float-box-on-page.box-1 {
+    top: -130px;
+    left: -130px;
+}
+
+.float-box-on-page.box-2 {
+    top: 130px;
+    right: -160px;
+}
+
+.float-box-on-page.box-3 {
+    bottom: -320px;
+    left: 320px;
+    -webkit-transform: rotate(
+            -45deg);
+    transform: rotate(
+            -45deg);
+}
+
+.float-box-on-page {
+    position: fixed;
+    width: 240px;
+    height: 400px;
+    background-color: hsla(0, 0%, 100%, .12);
+    border-radius: 8px;
+}
+
+.auth-page.login-page, .auth-page.login-page .form-submit-button {
+    background: #6a5edd;
+    background: linear-gradient(
+            45deg, #6a5edd, #d9399c 100%, #00d4ff 0);
+}
+
+.auth-page {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.auth-page-logo {
+    position: absolute;
+    top: 48px;
+    left: 48px;
+    z-index: 1;
+}
+
+.auth-page.login-page .auth-box {
+    padding: 24px 24px 64px;
+}
+
+.auth-box {
+    position: relative;
+    margin: 24px auto;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 24px;
+}
+
+.MuiContainer-maxWidthXs {
+    max-width: 444px;
+}
+
+
+.MuiContainer-root {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.main-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.auth-box .heading {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.auth-box .heading h1 {
+    font-size: 28px;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.MuiInputBase-input {
+    font: inherit;
+    color: currentColor;
+    width: 100%;
+    border: 0;
+    height: 1.1876em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    letter-spacing: inherit;
+    animation-duration: 10ms;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.MuiFilledInput-root {
+    position: relative;
+    transition: background-color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    background-color: rgba(0, 0, 0, 0.09);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.MuiInputBase-root {
+    color: rgba(0, 0, 0, 0.87);
+    cursor: text;
+    display: inline-flex;
+    position: relative;
+    font-size: 1rem;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.1876em;
+    letter-spacing: 0.00938em;
+}
+
+.MuiFormControl-root {
+    display: inline-flex;
+    padding: 0;
+    position: relative;
+    min-width: 0;
+    flex-direction: column;
+    vertical-align: top;
+}
+
+
+.auth-page .form-submit-button {
+    font-weight: 700;
+    border-radius: 16px;
+}
+
+.MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+}
+
+.MuiTouchRipple-root {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+button.MuiButton-contained.form-submit-button.MuiButton-containedPrimary.MuiButton-disableElevation {
+    width: 100%;
+    color: #fff;
+    padding: 9px 0;
+}
+
+.input-group {
+    position: relative;
+    transition: background-color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    background-color: rgba(0, 0, 0, 0.09);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+}

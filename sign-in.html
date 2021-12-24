@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sign-in</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="auth-page login-page">
+    <div class="MuiContainer-root main-container MuiContainer-maxWidthXs">
+        <div class=" auth-page-logo"><a href="/">
+            <img src="./assets/img/logo-white.png" class="logo"></a>
+        </div>
+        <div class="float-box-on-page box-1"></div>
+        <div class="float-box-on-page box-2"></div>
+        <div class="float-box-on-page box-3"></div>
+        <div class="auth-box">
+            <div class=" heading">
+                <h1 class="title ">Log In</h1>
+                <strong class=" sub-title ">
+                    <p class="M">I don’t have an account !
+                        <a href="/sign-up">Sign Up</a>
+                    </p>
+                </strong>
+            </div>
+            <form>
+                <div class="form-holder">
+                    <div class="input-group mb-3">
+                        <input placeholder="Email" aria-invalid="false" name="email" type="email"
+                               class="px-2 py-3 MuiInputBase-input MuiFilledInput-input d-block " value="">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input placeholder="password" aria-invalid="false" name="password" type="password"
+                               class="px-2 py-3 MuiInputBase-input MuiFilledInput-input d-block " value="">
+                    </div>
+
+                    <a href="/reset-password">
+                        <p class="float-end">Forgot Password?</p>
+                    </a>
+
+                    <button class="MuiButton-contained form-submit-button MuiButton-containedPrimary MuiButton-disableElevation"
+                            tabindex="0" type="submit"><span class="MuiButton-label">Sign In</span><span
+                            class=""></span>
+                    </button>
+                </div>
+            </form>
+            <div class="MuiBox-root">
+                <p class="text-center mb-5 mt-3">Or sign in using</p>
+                <div class="text-center">
+                    <img class="social-icon mx-2" src="./assets/img/facebook.svg"
+                         alt="facebook icon">
+                    <img class="social-icon mx-2" src="./assets/img/google.svg"
+                         alt="facebook icon">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
