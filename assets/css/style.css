@@ -190,3 +190,11 @@ button.MuiButton-contained.form-submit-button.MuiButton-containedPrimary.MuiButt
     width: 32px;
     height: 32px;
 }
+
+/*forget password*/
+
+.auth-page.reset-password-page, .auth-page.reset-password-page .form-submit-button {
+    background: #6a5edd;
+    background: linear-gradient(
+            45deg, #6a5edd, #348078 100%, #00d4ff 0);
+}
