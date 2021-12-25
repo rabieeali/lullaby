@@ -529,7 +529,7 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","
 .home-request-booking h3{text-align:center;}
 .home-request-booking .book-form{padding:16px;background-color:hsla(0,0%,100%,.12);border-radius:6px;}
 .home-request-booking h3{color:#6aadc6;font-size:24px;font-weight:700;line-height:1.2;}
-.home-request-booking .book-form .MuiFilledInput-root{background-color:#fff;border-radius:16px;border-bottom:none;}
+.home-request-booking .book-form .MuiFilledInput-root{background-color:#fff }
 .home-request-booking .MuiFilledInput-underline:after,.home-request-booking .MuiFilledInput-underline:before{display:none;}
 .home-request-booking .button-bold{border-radius:8px;background-color:#6aadc6!important;}
 .home-request-booking .text-holder{display:flex;align-items:center;}
@@ -708,7 +708,7 @@ label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::
 .MuiFilledInput-underline:after{left:0;right:0;bottom:0;content:"";position:absolute;transform:scaleX(0);transition:transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;border-bottom:2px solid #ff0084;pointer-events:none;}
 .MuiFilledInput-underline:before{left:0;right:0;bottom:0;content:"\00a0";position:absolute;transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;border-bottom:1px solid rgba(0, 0, 0, 0.42);pointer-events:none;}
 .MuiFilledInput-underline:hover:before{border-bottom:1px solid rgba(0, 0, 0, 0.87);}
-.MuiFilledInput-input{padding:27px 12px 10px;}
+.MuiFilledInput-input{padding:  12px 10px;}
 /*! CSS Used from: Embedded */
 .MuiFormLabel-root{color:rgba(0, 0, 0, 0.54);padding:0;font-size:1rem;font-family:"Roboto", "Helvetica", "Arial", sans-serif;font-weight:400;line-height:1;letter-spacing:0.00938em;}
 /*! CSS Used from: Embedded */
