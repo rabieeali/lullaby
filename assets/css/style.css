@@ -1,156 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /*sign up*/
-.float-box-on-page.box-1, .float-box-on-page.box-2 {
-    -webkit-transform: rotate(
-            -45deg);
-    transform: rotate(
-            -45deg);
+.float-box-on-page.box-1,
+.float-box-on-page.box-2 {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .float-box-on-page.box-1 {
-    top: -130px;
-    left: -130px;
+  top: -130px;
+  left: -130px;
 }
 
 .float-box-on-page.box-2 {
-    top: 130px;
-    right: -160px;
+  top: 130px;
+  right: -160px;
 }
 
 .float-box-on-page.box-3 {
-    bottom: -320px;
-    left: 320px;
-    -webkit-transform: rotate(
-            -45deg);
-    transform: rotate(
-            -45deg);
+  bottom: -320px;
+  left: 320px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .float-box-on-page {
-    position: fixed;
-    width: 240px;
-    height: 400px;
-    background-color: hsla(0, 0%, 100%, .12);
-    border-radius: 8px;
+  position: fixed;
+  width: 240px;
+  height: 400px;
+  background-color: hsla(0, 0%, 100%, 0.12);
+  border-radius: 8px;
 }
 
-.auth-page.login-page, .auth-page.login-page .form-submit-button {
-    background: #6a5edd;
-    background: linear-gradient(
-            45deg, #6a5edd, #d9399c 100%, #00d4ff 0);
+.auth-page.login-page,
+.auth-page.login-page .form-submit-button {
+  background: #6a5edd;
+  background: linear-gradient(45deg, #6a5edd, #d9399c 100%, #00d4ff 0);
 }
 
 .auth-page {
-    position: relative;
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .auth-page-logo {
-    position: absolute;
-    top: 48px;
-    left: 48px;
-    z-index: 1;
+  position: absolute;
+  top: 48px;
+  left: 48px;
+  z-index: 1;
 }
 
 .auth-page.login-page .auth-box {
-    padding: 24px 24px 64px;
+  padding: 24px 24px 64px;
 }
 
 .auth-box {
-    position: relative;
-    margin: 24px auto;
-    border-radius: 8px;
-    background-color: #fff;
-    padding: 24px;
+  position: relative;
+  margin: 24px auto;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 24px;
 }
 
 .MuiContainer-maxWidthXs {
-    max-width: 444px;
+  max-width: 444px;
 }
 
-
 .MuiContainer-root {
-    width: 100%;
-    display: block;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .main-container {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .auth-box .heading {
-    text-align: center;
-    margin-bottom: 16px;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 .auth-box .heading h1 {
-    font-size: 28px;
-    font-weight: 700;
-    border-bottom: 1px solid rgba(0, 0, 0, .12);
-    padding-bottom: 8px;
-    margin-bottom: 8px;
+  font-size: 28px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .MuiInputBase-input {
-    font: inherit;
-    color: currentColor;
-    width: 100%;
-    border: 0;
-    height: 1.1876em;
-    margin: 0;
-    display: block;
-    padding: 6px 0 7px;
-    min-width: 0;
-    background: none;
-    box-sizing: content-box;
-    animation-name: mui-auto-fill-cancel;
-    letter-spacing: inherit;
-    animation-duration: 10ms;
-    -webkit-tap-highlight-color: transparent;
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: 1.1876em;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: none;
+  box-sizing: content-box;
+  animation-name: mui-auto-fill-cancel;
+  letter-spacing: inherit;
+  animation-duration: 10ms;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .MuiFilledInput-root {
-    position: relative;
-    transition: background-color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
-    background-color: rgba(0, 0, 0, 0.09);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+  position: relative;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  background-color: rgba(0, 0, 0, 0.09);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .MuiInputBase-root {
-    color: rgba(0, 0, 0, 0.87);
-    cursor: text;
-    display: inline-flex;
-    position: relative;
-    font-size: 1rem;
-    box-sizing: border-box;
-    align-items: center;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 1.1876em;
-    letter-spacing: 0.00938em;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  position: relative;
+  font-size: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.1876em;
+  letter-spacing: 0.00938em;
 }
 
 .MuiFormControl-root {
-    display: inline-flex;
-    padding: 0;
-    position: relative;
-    min-width: 0;
-    flex-direction: column;
-    vertical-align: top;
+  display: inline-flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+  flex-direction: column;
+  vertical-align: top;
 }
 
-
 .auth-page .form-submit-button {
-    font-weight: 700;
-    border-radius: 16px;
+  font-weight: 700;
+  border-radius: 16px;
+}
+
+.MuiButton-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+button.MuiButton-contained.form-submit-button.MuiButton-containedPrimary.MuiButton-disableElevation {
+  width: 100%;
+  color: #fff;
+  padding: 9px 0;
+}
+
+.input-group {
+  position: relative;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  background-color: rgba(0, 0, 0, 0.09);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/*forget password*/
+
+.auth-page.reset-password-page,
+.auth-page.reset-password-page .form-submit-button {
+  background: #6a5edd;
+  background: linear-gradient(45deg, #6a5edd, #348078 100%, #00d4ff 0);
+}
+
+/*sttatic page*/
+
+.static-page a {
+  color: #ff0080;
+}
+
+.jss16 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-items .auth-button,
+.welcome-text {
+  white-space: nowrap;
+}
+
+.main-header-items .auth-button {
+  font-weight: 700;
+  border-width: 2px !important;
+  border-radius: 16px;
+}
+
+.MuiButton-outlinedPrimary {
+  color: #ff0084;
+  border: 1px solid rgba(255, 0, 132, 0.5);
+}
+
+.MuiButton-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  padding: 5px 15px;
+}
+
+.main-footer {
+  padding: 48px 0;
+  background-color: #f72585;
+}
+
+.copy-rights {
+  padding: 24px 0;
+  background-color: #cf0662;
+  color: #fff;
+}
+
+.main-footer ul a {
+  padding: 4px 0;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  border-bottom: 1px solid transparent;
+}
+
+.footer-menus li {
+  display: inline-flex;
+}
+
+.footer-menu-holder ul {
+  margin-top: 16px;
+}
+
+.main-footer ul {
+  margin-top: 44px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menus {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.section-heading-bold.font-size-32 > * {
+  font-size: 32px !important;
+}
+
+.footer-menu-holder {
+  margin-top: 48px;
+}
+
+.static-page p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.64);
+  margin-bottom: 24px;
+}
+
+.copy-rights p {
+  margin-bottom: 0 !important;
+}
+
+.main-header-items .auth-button {
+  font-weight: 700;
+  border-width: 2px !important;
+  border-radius: 16px;
+}
+
+.MuiButton-outlinedPrimary {
+  color: #ff0084;
+  border: 1px solid rgba(255, 0, 132, 0.5);
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-footer .logo {
+  width: 100px;
+}
+
+.main-header-items .logo {
+  max-width: 100px;
+}
+.main-header-items .auth-button {
+  font-weight: 700;
+  border-width: 2px !important;
+  border-radius: 16px;
+}
+.main-header-items .auth-button {
+  font-weight: 700;
+  border-width: 2px !important;
+  border-radius: 16px;
+}
+.MuiButton-outlinedPrimary {
+  color: #ff0084;
+  border: 1px solid rgba(255, 0, 132, 0.5);
+}
+.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.auth-button.MuiButton-outlinedPrimary {
+  background: #fff;
+  border-radius: 16px;
+}
+
+/* top header */
+/* .jss1 {
+  display: flex;
+  justify-content: space-between;
+}
+.main-header-items {
+  height: 100px;
+  align-items: center;
+} */
+/* ---------------------- parent or babysitter--------------------------- */
+/* .MuiTypography-h2 {
+    font-size: 3.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+}
+.section-heading-bold * {
+    font-size: 48px!important;
+    font-weight: 700!important;
+    color: #404040;
+}
+.MuiTypography-root {
+    margin: 0;
+}
+.MuiContainer-root {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.main-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+@media (min-width: 600px){
+
+    .MuiContainer-root {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+.MuiTypography-colorPrimary {
+    color: #ff0084;
+}
+
+.static-page p {
+font-size: 18px;
+color: rgba(0,0,0,.64);
+margin-bottom: 24px;
+}
+
+.MuiTypography-body1 {
+font-size: 1rem;
+font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.00938em;
+}
+.jss4 {
+    margin-top: 32px;
+}
+.MuiButton-containedPrimary {
+    color: #fff;
+    background-color: #ff0084;
 }
 
 .MuiButton-label {
@@ -159,7 +405,6 @@
     align-items: inherit;
     justify-content: inherit;
 }
-
 .MuiTouchRipple-root {
     top: 0;
     left: 0;
@@ -171,160 +416,336 @@
     border-radius: inherit;
     pointer-events: none;
 }
-
-button.MuiButton-contained.form-submit-button.MuiButton-containedPrimary.MuiButton-disableElevation {
-    width: 100%;
+.home-interview .button-bold {
+    min-width: 160px;
+    border-radius: 8px;
+    box-shadow: 0 2px 32px rgb(255 0 132 / 15%);
+}
+.button-bold {
+    font-weight: 700!important;
+    border-width: 2px!important;
+}
+.MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+.MuiButton-containedPrimary {
     color: #fff;
-    padding: 9px 0;
+    background-color: #ff0084;
 }
-
-.input-group {
-    position: relative;
-    transition: background-color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
-    background-color: rgba(0, 0, 0, 0.09);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-.social-icon {
-    width: 32px;
-    height: 32px;
-}
-
-/*forget password*/
-
-.auth-page.reset-password-page, .auth-page.reset-password-page .form-submit-button {
-    background: #6a5edd;
-    background: linear-gradient(
-            45deg, #6a5edd, #348078 100%, #00d4ff 0);
-}
-
-
-/*sttatic page*/
-
 .static-page a {
     color: #ff0080;
 }
-
-.jss16 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.main-header-items .auth-button, .welcome-text {
-    white-space: nowrap;
-}
-
-.main-header-items .auth-button {
-    font-weight: 700;
-    border-width: 2px !important;
-    border-radius: 16px;
+.home-interview .button-bold {
+    min-width: 160px;
+    border-radius: 8px;
+    box-shadow: 0 2px 32px rgb(255 0 132 / 15%);
 }
 
 .MuiButton-outlinedPrimary {
     color: #ff0084;
     border: 1px solid rgba(255, 0, 132, 0.5);
 }
-
 .MuiButton-outlined {
     border: 1px solid rgba(0, 0, 0, 0.23);
     padding: 5px 15px;
 }
+.MuiButton-root {
+    
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;}
+    .MuiButton-label {
+        width: 100%;
+        display: inherit;
+        align-items: inherit;
+        justify-content: inherit;
+    }
+    .MuiTouchRipple-root {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        overflow: hidden;
+        position: absolute;
+        border-radius: inherit;
+        pointer-events: none;
+    }
+    .home-interview img {
+        max-width: 100%;
+        height: auto;
+    } */
 
-.main-footer {
-    padding: 48px 0;
-    background-color: #f72585;
+    /*! CSS Used from: https://www.lullaby-hub.com/static/css/main.87fd4b04.chunk.css */
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.main-footer{padding:48px 0;background-color:#f72585;}
+.main-footer .logo{width:100px;}
+.main-footer p{color:#fff;}
+.main-footer ul{margin-top:44px;padding:0;list-style:none;}
+.main-footer ul a{padding:4px 0;display:inline-block;width:100%;color:#fff;border-bottom:1px solid transparent;}
+.copy-rights{padding:24px 0;background-color:#cf0662;color:#fff;}
+.footer-menus{display:flex;align-items:flex-start;flex-direction:column;}
+.footer-menus li{display:inline-flex;}
+.copy-rights p{margin-bottom:0!important;}
+@media (max-width:992px){
+.footer-menu-holder{margin-top:48px;}
+.footer-menu-holder ul{margin-top:16px;}
 }
-
-.copy-rights {
-    padding: 24px 0;
-    background-color: #cf0662;
-    color: #fff;
+.main-header-items{height:100px;align-items:center;}
+.main-header-items .logo{max-width:100px;}
+.main-header-items .auth-button{font-weight:700;border-width:2px!important;border-radius:16px;}
+.static-page p{font-size:18px;color:rgba(0,0,0,.64);margin-bottom:24px;}
+.static-page a{color:#ff0080;}
+.static-page>div.main-container a:hover{border-bottom:1px dotted;}
+.home-interview{min-height:500px;background-position:100%;background-size:contain;background-repeat:no-repeat;}
+.home-interview,.home-interview .details-holder{display:flex;justify-content:center;flex-direction:column;}
+.home-interview img{max-width:100%;height:auto;}
+.home-interview .button-bold{min-width:160px;border-radius:8px;box-shadow:0 2px 32px rgb(255 0 132/15%);}
+.home-know-our-concerns,.home-trust-and-safety{padding:80px 0;}
+.home-trust-and-safety .heading>span{font-size:24px;color:#6f6e73;}
+.trust-boxes .inner{padding:24px;text-align:center;box-shadow:0 2px 24px rgba(0,0,0,.07);border-radius:8px;}
+.trust-boxes .inner .title{margin-top:24px;font-weight:700;color:#414c4e;}
+.trust-boxes .inner img{height:145px;width:auto;}
+.trust-boxes .inner p{color:#4891aa;min-height:64px;}
+.home-request-booking{background-color:#3f37c9;}
+.home-request-booking{padding-top:24px;padding-bottom:24px;}
+.home-request-booking .big-title{font-size:80px;font-weight:700;color:#fff;line-height:1.2;}
+.home-request-booking h3{text-align:center;}
+.home-request-booking .book-form{padding:16px;background-color:hsla(0,0%,100%,.12);border-radius:6px;}
+.home-request-booking h3{color:#6aadc6;font-size:24px;font-weight:700;line-height:1.2;}
+.home-request-booking .book-form .MuiFilledInput-root{background-color:#fff;border-radius:16px;border-bottom:none;}
+.home-request-booking .MuiFilledInput-underline:after,.home-request-booking .MuiFilledInput-underline:before{display:none;}
+.home-request-booking .button-bold{border-radius:8px;background-color:#6aadc6!important;}
+.home-request-booking .text-holder{display:flex;align-items:center;}
+.section-heading-bold *{font-size:48px!important;font-weight:700!important;color:#404040;}
+.section-heading-bold.font-size-32>*{font-size:32px!important;}
+.benefits-row .title{font-size:48px;font-weight:700;margin-bottom:24px;}
+.benefits-row .title>span{color:#4895ef;}
+.benefits-row p{font-size:32px;color:#565557;}
+.benefits-row img{max-width:100%;height:auto;}
+.benefits-row .benefits-details{text-align:center;}
+.benefits-container:nth-child(2n) .benefits-row{flex-direction:row-reverse;}
+.benefits-container:nth-child(2n) .benefits-row .title{color:#ff0084;}
+.benefits-details{display:flex;flex-direction:column;justify-content:center;}
+.home-join-as-babysitter{background-color:#b5179e;}
+.home-join-as-babysitter h3{color:#e59edb;}
+.home-join-as-babysitter .button-bold{background-color:#e59edb!important;}
+.home-join-as-babysitter .big-title{color:#fff!important;}
+.home-join-as-babysitter .MuiFormControl-root{width:100%;}
+.home-join-as-babysitter .MuiFormControl-root .date-select{background-color:#fff;padding:4px 12px;border-radius:12px;width:100%;}
+.home-join-as-babysitter .MuiInput-underline:after,.home-join-as-babysitter .MuiInput-underline:before{display:none;}
+.concern-box .inner{background-color:#ebebeb;padding:24px;border-radius:6px;text-align:center;min-height:230px;}
+.concern-box .inner .title{font-weight:700;font-size:24px;color:#565b61;}
+.concern-box .inner p{color:#728091;}
+.home-show-your-opinion{padding:40px 0;text-align:center;background-color:#f49ac1;}
+.home-show-your-opinion .button-bold{width:300px;max-width:100%;font-size:20px;}
+@media (max-width:1280px){
+.home-request-booking .text-holder{margin:24px 0;justify-content:center;text-align:center;}
+.home-request-booking .book-form-holder,.home-request-booking .text-holder{width:100%!important;max-width:none;flex-basis:100%;}
+.trust-boxes .inner .title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.trust-boxes .inner p{min-height:80px;}
+.benefits-row{text-align:center;}
+.benefits-row img{margin-bottom:48px;}
 }
-
-.main-footer ul a {
-    padding: 4px 0;
-    display: inline-block;
-    width: 100%;
-    color: #fff;
-    border-bottom: 1px solid transparent;
+@media (max-width:992px){
+.concern-box .inner{min-height:0;}
 }
-
-.footer-menus li {
-    display: inline-flex;
+@media (max-width:960px){
+.home-interview .MuiGrid-container{flex-direction:column-reverse;}
 }
-
-.footer-menu-holder ul {
-    margin-top: 16px;
+a{text-decoration:none;}
+.form-holder{display:flex;flex-direction:column;}
+.form-holder>*{margin:12px 0!important;}
+.social-icon{width:32px;height:32px;}
+h1{font-size:28px;}
+h2{font-size:24px;}
+h3{font-size:21px;}
+.mr-16{margin-right:16px!important;}
+.button-bold{font-weight:700!important;border-width:2px!important;}
+.main-container{padding-left:0!important;padding-right:0!important;}
+@media (max-width:992px){
+.home-request-booking .big-title{font-size:48px;}
+.main-container{padding-left:16px!important;padding-right:16px!important;}
+.benefits-row .title,.section-heading-bold *{font-size:32px!important;}
+.main-header-items .auth-button{white-space:nowrap;}
+.button-bold{margin-bottom:16px!important;}
 }
-
-.main-footer ul {
-    margin-top: 44px;
-    padding: 0;
-    list-style: none;
+/*! CSS Used from: Embedded */
+.MuiContainer-root{width:100%;display:block;box-sizing:border-box;margin-left:auto;margin-right:auto;padding-left:16px;padding-right:16px;}
+@media (min-width:600px){
+.MuiContainer-root{padding-left:24px;padding-right:24px;}
 }
-
-.footer-menus {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+@media (min-width:1280px){
+.MuiContainer-maxWidthLg{max-width:1280px;}
 }
-
-.section-heading-bold.font-size-32 > * {
-    font-size: 32px !important;
+/*! CSS Used from: Embedded */
+.MuiTouchRipple-root{top:0;left:0;right:0;bottom:0;z-index:0;overflow:hidden;position:absolute;border-radius:inherit;pointer-events:none;}
+/*! CSS Used from: Embedded */
+.MuiButtonBase-root{color:inherit;border:0;cursor:pointer;margin:0;display:inline-flex;outline:0;padding:0;position:relative;align-items:center;user-select:none;border-radius:0;vertical-align:middle;-moz-appearance:none;justify-content:center;text-decoration:none;background-color:transparent;-webkit-appearance:none;-webkit-tap-highlight-color:transparent;}
+.MuiButtonBase-root::-moz-focus-inner{border-style:none;}
+@media print{
+.MuiButtonBase-root{-webkit-print-color-adjust:exact;}
 }
-
-.footer-menu-holder {
-    margin-top: 48px;
+/*! CSS Used from: Embedded */
+.MuiIconButton-root{flex:0 0 auto;color:rgba(0, 0, 0, 0.54);padding:12px;overflow:visible;font-size:1.5rem;text-align:center;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;border-radius:50%;}
+.MuiIconButton-root:hover{background-color:rgba(0, 0, 0, 0.04);}
+@media (hover: none){
+.MuiIconButton-root:hover{background-color:transparent;}
 }
-
-.static-page p {
-    font-size: 18px;
-    color: rgba(0, 0, 0, .64);
-    margin-bottom: 24px;
+.MuiIconButton-label{width:100%;display:flex;align-items:inherit;justify-content:inherit;}
+/*! CSS Used from: Embedded */
+.MuiTypography-root{margin:0;}
+.MuiTypography-body1{font-size:1rem;font-family:"Roboto", "Helvetica", "Arial", sans-serif;font-weight:400;line-height:1.5;letter-spacing:0.00938em;}
+.MuiTypography-h2{font-size:3.75rem;font-family:"Roboto", "Helvetica", "Arial", sans-serif;font-weight:300;line-height:1.2;letter-spacing:-0.00833em;}
+.MuiTypography-h4{font-size:2.125rem;font-family:"Roboto", "Helvetica", "Arial", sans-serif;font-weight:400;line-height:1.235;letter-spacing:0.00735em;}
+.MuiTypography-h6{font-size:1.25rem;font-family:"Roboto", "Helvetica", "Arial", sans-serif;font-weight:500;line-height:1.6;letter-spacing:0.0075em;}
+.MuiTypography-colorPrimary{color:#ff0084;}
+/*! CSS Used from: Embedded */
+.MuiGrid-container{width:100%;display:flex;flex-wrap:wrap;box-sizing:border-box;}
+.MuiGrid-item{margin:0;box-sizing:border-box;}
+.MuiGrid-spacing-xs-2{width:calc(100% + 16px);margin:-8px;}
+.MuiGrid-spacing-xs-2 > .MuiGrid-item{padding:8px;}
+.MuiGrid-spacing-xs-3{width:calc(100% + 24px);margin:-12px;}
+.MuiGrid-spacing-xs-3 > .MuiGrid-item{padding:12px;}
+.MuiGrid-spacing-xs-5{width:calc(100% + 40px);margin:-20px;}
+.MuiGrid-spacing-xs-5 > .MuiGrid-item{padding:20px;}
+.MuiGrid-grid-xs-12{flex-grow:0;max-width:100%;flex-basis:100%;}
+@media (min-width:600px){
+.MuiGrid-grid-sm-6{flex-grow:0;max-width:50%;flex-basis:50%;}
+.MuiGrid-grid-sm-8{flex-grow:0;max-width:66.666667%;flex-basis:66.666667%;}
+.MuiGrid-grid-sm-12{flex-grow:0;max-width:100%;flex-basis:100%;}
 }
-
-.copy-rights p {
-    margin-bottom: 0 !important;
+@media (min-width:960px){
+.MuiGrid-grid-md-4{flex-grow:0;max-width:33.333333%;flex-basis:33.333333%;}
+.MuiGrid-grid-md-5{flex-grow:0;max-width:41.666667%;flex-basis:41.666667%;}
+.MuiGrid-grid-md-6{flex-grow:0;max-width:50%;flex-basis:50%;}
+.MuiGrid-grid-md-7{flex-grow:0;max-width:58.333333%;flex-basis:58.333333%;}
+.MuiGrid-grid-md-8{flex-grow:0;max-width:66.666667%;flex-basis:66.666667%;}
+.MuiGrid-grid-md-12{flex-grow:0;max-width:100%;flex-basis:100%;}
 }
-
-.main-header-items .auth-button {
-    font-weight: 700;
-    border-width: 2px !important;
-    border-radius: 16px;
+@media (min-width:1280px){
+.MuiGrid-grid-lg-4{flex-grow:0;max-width:33.333333%;flex-basis:33.333333%;}
+.MuiGrid-grid-lg-5{flex-grow:0;max-width:41.666667%;flex-basis:41.666667%;}
+.MuiGrid-grid-lg-6{flex-grow:0;max-width:50%;flex-basis:50%;}
+.MuiGrid-grid-lg-7{flex-grow:0;max-width:58.333333%;flex-basis:58.333333%;}
+.MuiGrid-grid-lg-8{flex-grow:0;max-width:66.666667%;flex-basis:66.666667%;}
+.MuiGrid-grid-lg-12{flex-grow:0;max-width:100%;flex-basis:100%;}
 }
-
-.MuiButton-outlinedPrimary {
-    color: #ff0084;
-    border: 1px solid rgba(255, 0, 132, 0.5);
+/*! CSS Used from: Embedded */
+.MuiButton-root{color:rgba(0, 0, 0, 0.87);padding:6px 16px;font-size:0.875rem;min-width:64px;box-sizing:border-box;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-family:"Roboto", "Helvetica", "Arial", sans-serif;font-weight:500;line-height:1.75;border-radius:4px;letter-spacing:0.02857em;text-transform:uppercase;}
+.MuiButton-root:hover{text-decoration:none;background-color:rgba(0, 0, 0, 0.04);}
+@media (hover: none){
+.MuiButton-root:hover{background-color:transparent;}
 }
-
-a {
-    text-decoration: none;
+.MuiButton-label{width:100%;display:inherit;align-items:inherit;justify-content:inherit;}
+.MuiButton-outlined{border:1px solid rgba(0, 0, 0, 0.23);padding:5px 15px;}
+.MuiButton-outlinedPrimary{color:#ff0084;border:1px solid rgba(255, 0, 132, 0.5);}
+.MuiButton-outlinedPrimary:hover{border:1px solid #ff0084;background-color:rgba(255, 0, 132, 0.04);}
+@media (hover: none){
+.MuiButton-outlinedPrimary:hover{background-color:transparent;}
 }
+.MuiButton-contained{color:rgba(0, 0, 0, 0.87);box-shadow:0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);background-color:#e0e0e0;}
+.MuiButton-contained:hover{box-shadow:0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);background-color:#d5d5d5;}
+.MuiButton-contained:active{box-shadow:0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);}
+@media (hover: none){
+.MuiButton-contained:hover{box-shadow:0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);background-color:#e0e0e0;}
+}
+.MuiButton-containedPrimary{color:#fff;background-color:#ff0084;}
+.MuiButton-containedPrimary:hover{background-color:rgb(178, 0, 92);}
+@media (hover: none){
+.MuiButton-containedPrimary:hover{background-color:#ff0084;}
+}
+.MuiButton-disableElevation{box-shadow:none;}
+.MuiButton-disableElevation:hover{box-shadow:none;}
+.MuiButton-disableElevation:active{box-shadow:none;}
+/*! CSS Used from: Embedded */
+.MuiInputBase-root{color:rgba(0, 0, 0, 0.87);cursor:text;display:inline-flex;position:relative;font-size:1rem;box-sizing:border-box;align-items:center;font-family:"Roboto", "Helvetica", "Arial", sans-serif;font-weight:400;line-height:1.1876em;letter-spacing:0.00938em;}
+.MuiInputBase-input{font:inherit;color:currentColor;width:100%;border:0;height:1.1876em;margin:0;display:block;padding:6px 0 7px;min-width:0;background:none;box-sizing:content-box;animation-name:mui-auto-fill-cancel;letter-spacing:inherit;animation-duration:10ms;-webkit-tap-highlight-color:transparent;}
+.MuiInputBase-input::-webkit-input-placeholder{color:currentColor;opacity:0.42;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}
+.MuiInputBase-input::-moz-placeholder{color:currentColor;opacity:0.42;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}
+.MuiInputBase-input:-ms-input-placeholder{color:currentColor;opacity:0.42;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}
+.MuiInputBase-input::-ms-input-placeholder{color:currentColor;opacity:0.42;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}
+.MuiInputBase-input:focus{outline:0;}
+.MuiInputBase-input:invalid{box-shadow:none;}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-webkit-input-placeholder{opacity:0!important;}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-moz-placeholder{opacity:0!important;}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:-ms-input-placeholder{opacity:0!important;}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-ms-input-placeholder{opacity:0!important;}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder{opacity:0.42;}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder{opacity:0.42;}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder{opacity:0.42;}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder{opacity:0.42;}
+/*! CSS Used from: Embedded */
+.MuiInput-root{position:relative;}
+.MuiInput-underline:after{left:0;right:0;bottom:0;content:"";position:absolute;transform:scaleX(0);transition:transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;border-bottom:2px solid #ff0084;pointer-events:none;}
+.MuiInput-underline:before{left:0;right:0;bottom:0;content:"\00a0";position:absolute;transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;border-bottom:1px solid rgba(0, 0, 0, 0.42);pointer-events:none;}
+.MuiInput-underline:hover:not(.Mui-disabled):before{border-bottom:2px solid rgba(0, 0, 0, 0.87);}
+@media (hover: none){
+.MuiInput-underline:hover:not(.Mui-disabled):before{border-bottom:1px solid rgba(0, 0, 0, 0.42);}
+}
+/*! CSS Used from: Embedded */
+.MuiFilledInput-root{position:relative;transition:background-color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;background-color:rgba(0, 0, 0, 0.09);border-top-left-radius:4px;border-top-right-radius:4px;}
+.MuiFilledInput-root:hover{background-color:rgba(0, 0, 0, 0.13);}
+@media (hover: none){
+.MuiFilledInput-root:hover{background-color:rgba(0, 0, 0, 0.09);}
+}
+.MuiFilledInput-underline:after{left:0;right:0;bottom:0;content:"";position:absolute;transform:scaleX(0);transition:transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;border-bottom:2px solid #ff0084;pointer-events:none;}
+.MuiFilledInput-underline:before{left:0;right:0;bottom:0;content:"\00a0";position:absolute;transition:border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;border-bottom:1px solid rgba(0, 0, 0, 0.42);pointer-events:none;}
+.MuiFilledInput-underline:hover:before{border-bottom:1px solid rgba(0, 0, 0, 0.87);}
+.MuiFilledInput-input{padding:27px 12px 10px;}
+/*! CSS Used from: Embedded */
+.MuiFormLabel-root{color:rgba(0, 0, 0, 0.54);padding:0;font-size:1rem;font-family:"Roboto", "Helvetica", "Arial", sans-serif;font-weight:400;line-height:1;letter-spacing:0.00938em;}
+/*! CSS Used from: Embedded */
+.MuiInputLabel-root{display:block;transform-origin:top left;}
+.MuiInputLabel-formControl{top:0;left:0;position:absolute;transform:translate(0, 24px) scale(1);}
+.MuiInputLabel-animated{transition:color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;}
+.MuiInputLabel-filled{z-index:1;transform:translate(12px, 20px) scale(1);pointer-events:none;}
+/*! CSS Used from: Embedded */
+.MuiFormControl-root{border:0;margin:0;display:inline-flex;padding:0;position:relative;min-width:0;flex-direction:column;vertical-align:top;}
+/*! CSS Used from: Embedded */
+.MuiSvgIcon-root{fill:currentColor;width:1em;height:1em;display:inline-block;font-size:1.5rem;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;flex-shrink:0;user-select:none;}
+/*! CSS Used from: Embedded */
+.MuiSelect-select{cursor:pointer;min-width:16px;user-select:none;border-radius:0;-moz-appearance:none;-webkit-appearance:none;}
+.MuiSelect-select:focus{border-radius:0;background-color:rgba(0, 0, 0, 0.05);}
+.MuiSelect-select::-ms-expand{display:none;}
+.MuiSelect-select.MuiSelect-select{padding-right:24px;}
+.MuiSelect-filled.MuiSelect-filled{padding-right:32px;}
+.MuiSelect-selectMenu{height:auto;overflow:hidden;min-height:1.1876em;white-space:nowrap;text-overflow:ellipsis;}
+.MuiSelect-icon{top:calc(50% - 12px);color:rgba(0, 0, 0, 0.54);right:0;position:absolute;pointer-events:none;}
+.MuiSelect-iconFilled{right:7px;}
+.MuiSelect-nativeInput{left:0;width:100%;bottom:0;opacity:0;position:absolute;pointer-events:none;}
+/*! CSS Used keyframes */
+ 
 
-.main-footer .logo {
+/* parent form */
+.parent-registration-heading{
+    border-bottom: 1px solid #000;
+}
+.parent-img-upload{
     width: 100px;
+    height: 100px;
+    background: rgb(241, 239, 239);
+    border-radius: 50%;
+    border: 1px solid rgb(196, 192, 192);
+    display: block;
+    float: right;
 }
-
-.main-header-items .logo {
-    max-width: 100px;
-}
-.main-header-items .auth-button {
-    font-weight: 700;
-    border-width: 2px!important;
-    border-radius: 16px;
-}
-.main-header-items .auth-button {
-    font-weight: 700;
-    border-width: 2px!important;
-    border-radius: 16px;
-}
-.MuiButton-outlinedPrimary {
-    color: #ff0084;
-    border: 1px solid rgba(255, 0, 132, 0.5);
-}
-.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.auth-button.MuiButton-outlinedPrimary {
-    background: #fff;
-    border-radius: 16px;
+.bg-accordion{
+    background-color: #c9c9c957;
 }
