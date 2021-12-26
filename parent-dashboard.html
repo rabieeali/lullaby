@@ -5,22 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>parent-side</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <title>Parent Dashboard</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
-<body>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-</button>
+<body class="bg-parent-dashboard">
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 main-header-items  mt-3">
+                    <a href="/">
+                        <img src="./assets/img/logo.png" class="logo">
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="/sign-in">
+                        <button class=" mt-4 float-end MuiButtonBase-root MuiButton-root auth-button  btn btn-primary"
+                            tabindex="0" type="button">
+                            <span class="text-dark-blue fs-5 fw-bold">Logout</span>
+                            <span class="MuiTouchRipple-root"></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <h1 class="display-1 fw-bold text-dark-blue">Welcome <span>user!</span></h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+
+
+            <!--  Personal Information -->
+
+
+            <div class="card my-5">
+                <div class="card-header bg-primary">
+                    Personal Information
+                    <!-- <a href="#" class="float-end text-white">Edit</a> -->
+                    <!-- Button trigger modal -->
+<a class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Edit
+</a>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="container my-3">
+            <main class="container my-3">
                 <header class="parent-registration-heading">
                     <h1>Parent Registration Form</h1>
                 </header>
@@ -391,16 +424,73 @@
                     </div>
                 </div>
 
-            </div>
+            </main>
         </div>
     </div>
 </div>
+                </div>
+                <div class="card-body mx-3">
+                    <div class="row">
+                        <div class="col-3"><img class="img-fluid rounded-circle " src="assets/img/person-1.png" alt="#">
+                        </div>
+                        <div class="col-6">
+                            <h1>Lauraine L.Novak</h1>
+                            <p class="ps-5">Age <span>36</span>-<span> Web Designer</span></p>
+                            <ul class="list-unstyled">
+                                <li><i class="px-2 fas fa-envelope"></i><span>2L.Novak@gmail.com</span></li>
+                                <li><i class="px-2 fas fa-phone"></i><span>+372 508 6060</span></li>
+                                <li><i class="px-2 fas fa-map-marker"></i><span>America</span></li>
+                                <li><i class="px-2 fas fa-birthday-cake"></i><span>Jul 7,1993</span></li>
+                                <li><i class="px-2 fas fa-venus-mars"></i><span>Female</span></li>
+                                <li><i class="px-2 fas fa-rings-wedding"></i><span>Married(date)</span></li>
+                                <li><i class="px-2 fas fa-child"></i><span>One Daughter</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <div class="row">
+                                <button class="btn-sm bg-parent-dashboard-btn text-white my-2 white-border">Book</button>
+                                <button class="btn-sm bg-parent-dashboard-btn text-white my-2 white-border">Invoice</button>
+                                <button class="btn-sm bg-parent-dashboard-btn text-white my-2 white-border">Favorite</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Short Bio -->
+            <div class="card my-5">
+                <div class="card-header bg-primary">
+                    Short Bio
+                    <a href="#" class="float-end text-white">Edit</a>
+                </div>
+                <div class="card-body mx-3">
+
+                </div>
+            </div>
+
+            <!--  Gallery -->
+            <div class="card my-5">
+                <div class="card-header bg-primary">
+                    Gallery
+                    <a href="#" class="float-end text-white">Add</a>
+                </div>
+                <div class="card-body mx-3">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="">
+        <div class="MuiBox-root jss23 text-white">
+                <p class="px-5 MuiTypography-body1 pt-5">Copyright © Lullaby 2021 - All rights<a class="float-end text-white" href="">Contact Us</a>
+                    reserved</p>
+        </div>
+    </footer>
 
 
 
 
-<!-- script -->
-<script src="assets/js/bootstrap.min.js"></script>
+    <!-- script -->
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
