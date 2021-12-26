@@ -6,53 +6,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parent Dashboard</title>
-    <link rel="stylesheet" href="./assets/css/all.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/all.js"></script>
-
 </head>
 
 <body class="bg-parent-dashboard">
-    <header class="main-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 main-header-items  mt-3">
-                    <a href="/">
-                        <img src="./assets/img/logo.png" class="logo">
-                    </a>
-                </div>
-                <div class="col-6">
-                    <a href="/sign-in">
-                        <button class=" mt-4 float-end MuiButtonBase-root MuiButton-root auth-button  btn btn-primary"
+<header class="main-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 main-header-items  mt-3">
+                <a href="/">
+                    <img src="./assets/img/logo.png" class="logo">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/sign-in">
+                    <button class=" mt-4 float-end MuiButtonBase-root MuiButton-root auth-button  btn btn-primary"
                             tabindex="0" type="button">
-                            <span class="text-dark-blue fs-5 fw-bold">Logout</span>
-                            <span class="MuiTouchRipple-root"></span>
-                        </button>
-                    </a>
+                        <span class="text-dark-blue fs-5 fw-bold"> <i class="fas fa-sign-in-alt"></i> Logout</span>
+                        <span class="MuiTouchRipple-root"></span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <h1 class="  fw-bold text-dark-blue">Welcome <span>user!</span></h1>
+    </div>
+</header>
+<div>
+    <div class="container">
+        <!--  Personal Information -->
+        <div class="card my-5">
+            <div class="card-header bg-primary">
+                <div class="row">
+                    <div class="col-6">
+                        <p class="mt-2 white-color">Personal Information</p>
+                    </div>
+                    <div class="col-6 float-end">
+                        <!-- Button trigger modal -->
+                        <a class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Edit
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-body mx-3">
+                <div class="row">
+                    <div class="col-3"><img class="img-fluid rounded-circle " src="assets/img/person-1.png" alt="#">
+                    </div>
+                    <div class="col-6">
+                        <h1>Lauraine L.Novak</h1>
+                        <p class="ps-5">Age <span>36</span>-<span> Web Designer</span></p>
+
+                        <ul class="list-unstyled">
+                            <li><i class="far fa-envelope"></i><span>2L.Novak@gmail.com</span></li>
+                            <li><i class="fas fa-phone"></i><span>+372 508 6060</span></li>
+                            <li><i class="fas fa-map-marker"></i><span>America</span></li>
+                            <li><i class="far fa-calendar-alt"></i><span>Jul 7,1993</span></li>
+                            <li><i class="fas fa-venus-mars"></i><span>Female</span></li>
+                            <li><i class="fas fa-user-friends"></i><span>Married(date)</span></li>
+                            <li><span>One Daughter</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <div class="row">
+                            <button class="btn-sm bg-parent-dashboard-btn text-white my-2 white-border">Book</button>
+                            <button class="btn-sm bg-parent-dashboard-btn text-white my-2 white-border">Invoice</button>
+                            <button class="btn-sm bg-parent-dashboard-btn text-white my-2 white-border">Favorite
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h1 class="display-1 fw-bold text-dark-blue">Welcome <span>user!</span></h1>
         </div>
-    </header>
-    <main>
-        <div class="container">
+        <!--  Short Bio -->
+        <div class="card my-5">
+            <div class="card-header bg-primary">
+                <span class="white-color">Short Bio</span>
+                <a href="#" class="float-end text-white">Edit</a>
+            </div>
+            <div class="card-body mx-3">
 
+            </div>
+        </div>
 
-            <!--  Personal Information -->
+        <!--  Gallery -->
+        <div class="card my-5">
+            <div class="card-header bg-primary">
+                <span class="white-color">Gallery  </span>
 
+                <a href="#" class="float-end text-white">Add</a>
+            </div>
+            <div class="card-body mx-3">
 
-            <div class="card my-5">
-                <div class="card-header bg-primary">
-                    Personal Information
-                    <!-- <a href="#" class="float-end text-white">Edit</a> -->
-                    <!-- Button trigger modal -->
-<a class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Edit
-</a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="">
+    <div class="MuiBox-root jss23 text-white">
+        <p class="px-5 MuiTypography-body1 pt-5">Copyright © Lullaby 2021 - All rights<a class="float-end text-white"
+                                                                                         href="">Contact Us</a>
+            reserved</p>
+    </div>
+</footer>
+
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <main class="container my-3">
@@ -66,13 +130,15 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="First Name" aria-label="Username"
+                                        <input type="text" class="form-control" placeholder="First Name"
+                                               aria-label="Username"
                                                aria-describedby="basic-addon1">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Last Name" aria-label="Username"
+                                        <input type="text" class="form-control" placeholder="Last Name"
+                                               aria-label="Username"
                                                aria-describedby="basic-addon1">
                                     </div>
                                 </div>
@@ -88,19 +154,24 @@
                             <!-- Personal Information -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                    <button class="accordion-button bg-accordion collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
-                                            aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    <button class="accordion-button bg-accordion collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne"
+                                            aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
                                         <h2 class="fw-bold text-dark">Personal Information</h2>
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                <div id="panelsStayOpen-collapseOne"
+                                     class="accordion-collapse collapse show"
                                      aria-labelledby="panelsStayOpen-headingOne">
                                     <div class="accordion-body">
                                         <!-- birthday -->
                                         <div class="input-group bg-white row my-4">
                                             <div class="col-md-3">
-                                                <h3>Birth Date <i class="fas fa-birthday-cake mx-2"></i></h3>
+                                                <h3>Birth Date <i class="fas fa-birthday-cake mx-2"></i>
+                                                </h3>
                                             </div>
                                             <div class="col-md-3">
                                                 <select class="form-select" id="inputGroupSelect04"
@@ -137,17 +208,20 @@
                                             </div>
                                             <div class="col-8">
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    <input class="form-check-input" type="radio"
+                                                           name="inlineRadioOptions"
                                                            id="inlineRadio1" value="option1">
                                                     <label class="form-check-label" for="inlineRadio1">Male</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    <input class="form-check-input" type="radio"
+                                                           name="inlineRadioOptions"
                                                            id="inlineRadio2" value="option2">
                                                     <label class="form-check-label" for="inlineRadio2">Female</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    <input class="form-check-input" type="radio"
+                                                           name="inlineRadioOptions"
                                                            id="inlineRadio3" value="option3">
                                                     <label class="form-check-label" for="inlineRadio3">Other</label>
                                                 </div>
@@ -161,8 +235,10 @@
                                             </div>
                                             <div class="col-4">
                                                 <div class="input-group bg-light mb-3">
-                                                    <input type="text" class="form-control" placeholder="Job"
-                                                           aria-label="Username" aria-describedby="basic-addon1">
+                                                    <input type="text" class="form-control"
+                                                           placeholder="Job"
+                                                           aria-label="Username"
+                                                           aria-describedby="basic-addon1">
                                                 </div>
 
                                             </div>
@@ -170,7 +246,8 @@
                                         <!-- marital status -->
                                         <div class="row">
                                             <div class="col-4">
-                                                <h3>Marital Status <i class="fas fa-rings-wedding mx-2"></i></h3>
+                                                <h3>Marital Status <i
+                                                        class="fas fa-rings-wedding mx-2"></i></h3>
                                             </div>
                                             <div class="col-4">
                                                 <div class="input-group bg-light mb-3">
@@ -224,13 +301,17 @@
                                 <!-- Your Children Information -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                        <button class="accordion-button bg-accordion collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
-                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                        <button class="accordion-button bg-accordion collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#panelsStayOpen-collapseTwo"
+                                                aria-expanded="false"
+                                                aria-controls="panelsStayOpen-collapseTwo">
                                             <h2 class="fw-bold text-dark">Your Children Information</h2>
                                         </button>
                                     </h2>
-                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                    <div id="panelsStayOpen-collapseTwo"
+                                         class="accordion-collapse collapse"
                                          aria-labelledby="panelsStayOpen-headingTwo">
                                         <div class="accordion-body">
                                             <!-- child info -->
@@ -239,14 +320,18 @@
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="input-group mb-3">
-                                                            <input type="text" class="form-control" placeholder="First Name"
-                                                                   aria-label="Username" aria-describedby="basic-addon1">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="First Name"
+                                                                   aria-label="Username"
+                                                                   aria-describedby="basic-addon1">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="input-group mb-3">
-                                                            <input type="text" class="form-control" placeholder="Last Name"
-                                                                   aria-label="Username" aria-describedby="basic-addon1">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="Last Name"
+                                                                   aria-label="Username"
+                                                                   aria-describedby="basic-addon1">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -260,44 +345,62 @@
                                                         <!-- select -->
                                                         <div class="col-6">
                                                             <div class="form-check">
-                                                                <input class="form-check-input" type="radio"
-                                                                       name="flexRadioDefault" id="flexRadioDefault1">
-                                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                                <input class="form-check-input"
+                                                                       type="radio"
+                                                                       name="flexRadioDefault"
+                                                                       id="flexRadioDefault1">
+                                                                <label class="form-check-label"
+                                                                       for="flexRadioDefault1">
                                                                     New Born
                                                                 </label>
                                                             </div>
                                                             <div class="form-check">
-                                                                <input class="form-check-input" type="radio"
-                                                                       name="flexRadioDefault" id="flexRadioDefault2">
-                                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                                <input class="form-check-input"
+                                                                       type="radio"
+                                                                       name="flexRadioDefault"
+                                                                       id="flexRadioDefault2">
+                                                                <label class="form-check-label"
+                                                                       for="flexRadioDefault2">
                                                                     Infancy
                                                                 </label>
                                                             </div>
                                                             <div class="form-check">
-                                                                <input class="form-check-input" type="radio"
-                                                                       name="flexRadioDefault" id="flexRadioDefault3">
-                                                                <label class="form-check-label" for="flexRadioDefault3">
+                                                                <input class="form-check-input"
+                                                                       type="radio"
+                                                                       name="flexRadioDefault"
+                                                                       id="flexRadioDefault3">
+                                                                <label class="form-check-label"
+                                                                       for="flexRadioDefault3">
                                                                     Toddlerhood
                                                                 </label>
                                                             </div>
                                                             <div class="form-check">
-                                                                <input class="form-check-input" type="radio"
-                                                                       name="flexRadioDefault" id="flexRadioDefault4">
-                                                                <label class="form-check-label" for="flexRadioDefault4">
+                                                                <input class="form-check-input"
+                                                                       type="radio"
+                                                                       name="flexRadioDefault"
+                                                                       id="flexRadioDefault4">
+                                                                <label class="form-check-label"
+                                                                       for="flexRadioDefault4">
                                                                     Pre-School Age
                                                                 </label>
                                                             </div>
                                                             <div class="form-check">
-                                                                <input class="form-check-input" type="radio"
-                                                                       name="flexRadioDefault" id="flexRadioDefault5">
-                                                                <label class="form-check-label" for="flexRadioDefault5">
+                                                                <input class="form-check-input"
+                                                                       type="radio"
+                                                                       name="flexRadioDefault"
+                                                                       id="flexRadioDefault5">
+                                                                <label class="form-check-label"
+                                                                       for="flexRadioDefault5">
                                                                     School Age
                                                                 </label>
                                                             </div>
                                                             <div class="form-check">
-                                                                <input class="form-check-input" type="radio"
-                                                                       name="flexRadioDefault" id="flexRadioDefault6">
-                                                                <label class="form-check-label" for="flexRadioDefault6">
+                                                                <input class="form-check-input"
+                                                                       type="radio"
+                                                                       name="flexRadioDefault"
+                                                                       id="flexRadioDefault6">
+                                                                <label class="form-check-label"
+                                                                       for="flexRadioDefault6">
                                                                     Adolescent
                                                                 </label>
                                                             </div>
@@ -310,7 +413,8 @@
                                                             <h3>Birth Date</h3>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <select class="form-select" id="inputGroupSelect04"
+                                                            <select class="form-select"
+                                                                    id="inputGroupSelect04"
                                                                     aria-label="Example select with button addon">
                                                                 <option selected>Month</option>
                                                                 <option value="1">One</option>
@@ -319,7 +423,8 @@
                                                             </select>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <select class="form-select" id="inputGroupSelect04"
+                                                            <select class="form-select"
+                                                                    id="inputGroupSelect04"
                                                                     aria-label="Example select with button addon">
                                                                 <option selected>Day</option>
                                                                 <option value="1">One</option>
@@ -328,7 +433,8 @@
                                                             </select>
                                                         </div>
                                                         <div class="col-md-3">
-                                                            <select class="form-select" id="inputGroupSelect04"
+                                                            <select class="form-select"
+                                                                    id="inputGroupSelect04"
                                                                     aria-label="Example select with button addon">
                                                                 <option selected>Year</option>
                                                                 <option value="1">One</option>
@@ -350,13 +456,17 @@
                             <!-- Contact Details -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                    <button class="accordion-button bg-accordion collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
-                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    <button class="accordion-button bg-accordion collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseThree"
+                                            aria-expanded="false"
+                                            aria-controls="panelsStayOpen-collapseThree">
                                         <h2 class="fw-bold text-dark">Contact Details</h2>
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                <div id="panelsStayOpen-collapseThree"
+                                     class="accordion-collapse collapse"
                                      aria-labelledby="panelsStayOpen-headingThree">
                                     <div class="accordion-body">
 
@@ -368,8 +478,10 @@
                                                 </div>
                                                 <div class="col-8">
                                                     <div class="input-group bg-light mb-3">
-                                                        <input type="text" class="form-control" placeholder="Email"
-                                                               aria-label="Username" aria-describedby="basic-addon1">
+                                                        <input type="text" class="form-control"
+                                                               placeholder="Email"
+                                                               aria-label="Username"
+                                                               aria-describedby="basic-addon1">
                                                     </div>
                                                 </div>
                                             </div>
@@ -380,20 +492,25 @@
                                                 </div>
                                                 <div class="col-8">
                                                     <div class="input-group bg-light mb-3">
-                                                        <input type="text" class="form-control" placeholder="Phone : +372-"
-                                                               aria-label="Username" aria-describedby="basic-addon1">
+                                                        <input type="text" class="form-control"
+                                                               placeholder="Phone : +372-"
+                                                               aria-label="Username"
+                                                               aria-describedby="basic-addon1">
                                                     </div>
                                                 </div>
                                             </div>
                                             <!-- address -->
                                             <div class="row">
                                                 <div class="col-4">
-                                                    <h3>Address <i class="fas fa-map-marked mx-2"></i></h3>
+                                                    <h3>Address <i class="fas fa-map-marked mx-2"></i>
+                                                    </h3>
                                                 </div>
                                                 <div class="col-8">
                                                     <div class="input-group bg-light mb-3">
-                                                        <input type="text" class="form-control" placeholder="Address"
-                                                               aria-label="Username" aria-describedby="basic-addon1">
+                                                        <input type="text" class="form-control"
+                                                               placeholder="Address"
+                                                               aria-label="Username"
+                                                               aria-describedby="basic-addon1">
                                                     </div>
                                                 </div>
                                             </div>
@@ -405,7 +522,8 @@
                                                 <div class="col-8">
                                                     <div class="input-group bg-light mb-3">
                                                         <input type="text" class="form-control"
-                                                               placeholder="Emergency Phone Number" aria-label="Username"
+                                                               placeholder="Emergency Phone Number"
+                                                               aria-label="Username"
                                                                aria-describedby="basic-addon1">
                                                     </div>
                                                 </div>
@@ -430,69 +548,7 @@
         </div>
     </div>
 </div>
-                </div>
-                <div class="card-body mx-3">
-                    <div class="row">
-                        <div class="col-3"><img class="img-fluid rounded-circle " src="assets/img/person-1.png" alt="#">
-                        </div>
-                        <div class="col-6">
-                            <h1>Lauraine L.Novak</h1>
-                            <p class="ps-5">Age <span>36</span>-<span> Web Designer</span></p>
-                            <ul class="list-unstyled">
-                                <li><i class="px-2 fas fa-envelope"></i><span>2L.Novak@gmail.com</span></li>
-                                <li><i class="px-2 fas fa-phone"></i><span>+372 508 6060</span></li>
-                                <li><i class="px-2 fas fa-map-marker"></i><span>America</span></li>
-                                <li><i class="px-2 fas fa-birthday-cake"></i><span>Jul 7,1993</span></li>
-                                <li><i class="px-2 fas fa-venus-mars"></i><span>Female</span></li>
-                                <li><i class="px-2 fas fa-rings-wedding"></i><span>Married(date)</span></li>
-                                <li><i class="px-2 fas fa-child"></i><span>One Daughter</span></li>
-                            </ul>
-                        </div>
-                        <div class="col-2">
-                            <div class="row">
-                                <button class="btn-sm bg-parent-dashboard-btn text-white my-2 white-border">Book</button>
-                                <button class="btn-sm bg-parent-dashboard-btn text-white my-2 white-border">Invoice</button>
-                                <button class="btn-sm bg-parent-dashboard-btn text-white my-2 white-border">Favorite</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--  Short Bio -->
-            <div class="card my-5">
-                <div class="card-header bg-primary">
-                    Short Bio
-                    <a href="#" class="float-end text-white">Edit</a>
-                </div>
-                <div class="card-body mx-3">
-
-                </div>
-            </div>
-
-            <!--  Gallery -->
-            <div class="card my-5">
-                <div class="card-header bg-primary">
-                    Gallery
-                    <a href="#" class="float-end text-white">Add</a>
-                </div>
-                <div class="card-body mx-3">
-
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="">
-        <div class="MuiBox-root jss23 text-white">
-                <p class="px-5 MuiTypography-body1 pt-5">Copyright © Lullaby 2021 - All rights<a class="float-end text-white" href="">Contact Us</a>
-                    reserved</p>
-        </div>
-    </footer>
-
-
-
-
-    <!-- script -->
-    <script src="assets/js/bootstrap.min.js"></script>
+<!-- script -->
 </body>
 
 </html>

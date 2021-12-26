@@ -1717,3 +1717,7 @@ p.paragraph {
 .body-border-box {
     background: #ebeaea;
 }
+
+.white-color {
+    color: #fff
+}
