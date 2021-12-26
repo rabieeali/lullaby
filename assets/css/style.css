@@ -749,3 +749,6 @@ label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::
 .bg-accordion{
     background-color: #c9c9c957;
 }
+.main-header-items .logo {
+  max-width: 100px;
+}
