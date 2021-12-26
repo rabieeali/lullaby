@@ -1721,3 +1721,13 @@ p.paragraph {
 .white-color {
     color: #fff
 }
+
+.btn-fav a {
+    color: #fff;
+    display: block;
+    text-align: center;
+    background: #0d1a5f;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
