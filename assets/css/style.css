@@ -1709,7 +1709,7 @@ p.paragraph {
 .title-border-box {
     background: #0d1a5f;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
@@ -1737,5 +1737,65 @@ p.paragraph {
     display: inline-block;
     padding: 25px 40px;
     margin-bottom: 12px;
-    margin-top:10px
+    margin-top: 10px
+}
+
+.letter-space-title {
+    letter-spacing: 12px;
+    text-align: center;
+    font-size: 50px !important;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+}
+
+.prim-color-2 {
+    color: #4b93ec
+}
+
+.inner .title {
+    font-weight: bold;
+}
+
+.title-red {
+    color: #b5179e;
+}
+
+.btn-prim-color {
+    background: #0d1a5f;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-with-border-bottom {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    display: inline-grid;
+}
+
+.bordered {
+    border: 1px solid #0d1a5f;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.filter {
+    background: #fff;
+    color: #000;
+    position: absolute;
+    right: 7px;
+    width: 270px;
+    top: 45px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.open-modal-btn:hover .filter-modal {
+    display: block !important;
 }
