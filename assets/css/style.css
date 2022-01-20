@@ -1707,7 +1707,7 @@ p.paragraph {
 }
 
 .title-border-box {
-    background: #0d1a5f;
+    background: #1f3b9d;
     color: #fff;
     padding: 20px;
     border-top-right-radius: 10px;
@@ -1730,6 +1730,7 @@ p.paragraph {
     border-radius: 7px;
     padding: 10px;
     margin-bottom: 10px;
+    text-decoration: none;
 }
 
 .number {
@@ -1760,6 +1761,10 @@ p.paragraph {
     font-weight: bold;
 }
 
+.gold-color {
+    color: #f1c016;
+}
+
 .title-red {
     color: #b5179e;
 }
@@ -1776,6 +1781,7 @@ p.paragraph {
     font-weight: bold;
     border-bottom: 1px solid #ccc;
     display: inline-grid;
+    width: 100%;
 }
 
 .bordered {
@@ -1790,7 +1796,7 @@ p.paragraph {
     position: absolute;
     right: 7px;
     width: 270px;
-    top: 45px;
+    top: 0;
     border-radius: 10px;
     border: 1px solid #ccc;
     padding: 10px;
@@ -1798,4 +1804,29 @@ p.paragraph {
 
 .open-modal-btn:hover .filter-modal {
     display: block !important;
+    z-index: 999;
+    position: relative;
+}
+
+.bg-body-card {
+    background: linear-gradient(45deg, #a1b0c5, #a1bab6 100%, #00d4ff 0);
+}
+
+.vacc {
+    position: absolute;
+    right: -20px;
+    width: 110px;
+    bottom: -20px;
+}
+
+.detils-baby-list p {
+    margin: 0;
+}
+
+.float-end {
+    float: right
+}
+
+.float-start {
+    float: left
 }
