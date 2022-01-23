@@ -5,15 +5,29 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>information </title>
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Information </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+	      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="./assets/css/all.css">
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/all.js"></script>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="./assets/js/all.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	        crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+	        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+	        crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+	        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+	        crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-parent-dashboard">
+
+<!--Header-->
 <header class="main-header">
 	<div class="container">
 		<div class="row">
@@ -29,12 +43,10 @@
                             <i class="fas fa-sign-in-alt"></i>
                         </span>
 				</a>
-
-
 			</div>
 		</div>
 		<div>
-			<h1 class="d-inline-block  fw-bold text-dark-blue">Welcome <span>user!</span></h1>
+			<h1 class="d-inline-block  fw-bold text-dark-blue">Welcome <span>Back Aurora!</span></h1>
 			<div class="float-end">
 				<i class="mx-2  text-white fas fa-calendar"></i>
 				<i class="mx-2  text-white  fas fa-text-width"></i>
@@ -45,20 +57,27 @@
 
 			<h2 class="d-inline-block  fw-bold text-dark-blue">Information</h2>
 			<div class="float-end">
-				<span class="text-white ">Edit</span>
+				<span class="text-dark-blue ">Edit</span>
 			</div>
 		</div>
 	</div>
 </header>
+<!--Header End-->
+
 <div>
 	<div class="container">
 		<!--  Personal Information -->
 		<div class="card my-3">
-			<div class="card-body">
+			<!--Card Body-->
+			<div class="card-body  bg-body-card">
 				<div class="row  mx-3  mb-2">
 					<div class="col-3">
-						<img class="img-fluid rounded-circle " src="assets/img/person-1.png" alt="#">
-						<p class="text-center">edit photo</p>
+						<div class="position-relative">
+
+							<img class="img-fluid  vacc" src="assets/img/vacc.png" alt="#">
+							<img class="img-fluid rounded-circle " src="assets/img/person-1.png" alt="#">
+						</div>
+						<p class="text-center m-0">edit photo</p>
 						<p class="text-center">
 							<i class="gold-color fas fa-star-half"></i>
 							<i class="gold-color fa fa-star"></i>
@@ -68,42 +87,75 @@
 						</p>
 					</div>
 					<div class="col-6">
-						<p>
-							<span class="bold">Date of Birth</span> :<span>1999/9/9</span>
-						</p>
-						<p>
-							<span class="bold">Hourly rate</span> :<span>15 </span>
+						<div class=" detils-baby-list">
 
-							&nbsp;&nbsp;<span class="bold"> Working time</span> :<span>full-time</span>
-						</p>
-						<p>
-							<span class="bold">city</span> :<span>tehran</span>
-						</p>
+							<h5 class=" pb-2 header-with-border-bottom">Detils</h5>
 
+							<p>
+								<span class="bold">Date of Birth</span> :<strong>1999/9/9</strong>
+							</p>
+							<p>
+								<span class="bold">Hourly rate</span> :<strong>15 </strong>
+
+								&nbsp;&nbsp;<span class="bold"> Working time</span> :<strong>full-time</strong>
+							</p>
+							<p>
+								<span class="bold">city</span> :<strong>tehran</strong>
+							</p>
+						</div>
 					</div>
 					<div class="col-3">
-						<p class="header-with-border-bottom">Comfortable with
-						</p>
-						<p>icon</p>
-						<p>icon</p>
-						<p>icon</p>
-						<p>icon</p>
+						<div class=" detils-baby-list">
+
+							<h5 class="pb-2 header-with-border-bottom">Comfortable with
+							</h5>
+
+							<p><a type="button" class=" btn btn-link" data-toggle="tooltip"
+							      data-placement="top"
+							      title="Housekeeping">
+								<i class="fas fa-vacuum "></i>
+							</a></p>
+
+							<p><a type="button" class=" btn btn-link" data-toggle="tooltip"
+							      data-placement="top"
+							      title="No Smoking">
+								<i class="fas fa-smoking-ban "></i>
+							</a>
+							</p>
+
+							<p>
+								<a type="button" class=" btn btn-link" data-toggle="tooltip"
+								   data-placement="top"
+								   title="Babysitter is verify">
+									<i class="fas fa-user-check "></i>
+								</a>
+							</p>
+							<p>
+								<a type="button" class=" btn btn-link" data-toggle="tooltip"
+								   data-placement="top"
+								   title="No alcohol">
+									<i class="fas fa-wine-bottle "></i>
+								</a>
+							</p>
+						</div>
 					</div>
 				</div>
-
 			</div>
+			<!--Card Body End-->
+
 		</div>
 		<!--  About me Short Bio -->
 		<div>
-			<h2 class="d-inline-block  fw-bold text-dark-blue">About me</h2>
+			<h2 class="m-0 d-inline-block  fw-bold text-dark-blue">About me</h2>
 			<div class="float-end">
-				<span class="text-white ">Edit</span>
+				<span class="text-dark-blue ">Edit</span>
 			</div>
 		</div>
 
-		<div class="card my-3">
+		<!--Card Body-->
+		<div class="card bg-body-card my-3">
 			<div class="card-body">
-				<div class="row  mx-3  mb-2">
+				<div class="row mx-3">
 					<p>
 						I'm currently a sophomore at USF. I've been working with kids since I was 15 and love it. I
 						started
@@ -120,6 +172,8 @@
 
 			</div>
 		</div>
+		<!--Card Body End-->
+
 
 		<!-- Recommendation-->
 		<div>
@@ -127,8 +181,9 @@
 
 		</div>
 
+		<!--Card Body-->
 		<div class="card my-3">
-			<div class="card-body">
+			<div class="card-body bg-body-card">
 				<div class="row  mx-3  mb-2">
 					<div class="col-3">
 						<img class="img-fluid  " src="assets/img/person-1.png" alt="#">
@@ -154,6 +209,7 @@
 				</div>
 			</div>
 		</div>
+		<!--Card Body End-->
 
 
 		<!--  Gallery -->
@@ -163,6 +219,7 @@
 				<span class="text-white ">see</span>
 			</div>
 		</div>
+		<!--Card Body-->
 		<div class="card my-3">
 			<div class="card-body">
 				<div class="row  mx-3  mb-2">
@@ -184,8 +241,11 @@
 				</div>
 			</div>
 		</div>
+		<!--Card Body End-->
 	</div>
 </div>
+
+<!--Footer-->
 <footer class="">
 	<div class="MuiBox-root jss23 text-white">
 		<p class="px-5 MuiTypography-body1 pt-5">Copyright © Lullaby 2021 - All rights
@@ -194,5 +254,13 @@
 		</p>
 	</div>
 </footer>
+<!--Footer End-->
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+</script>
+
 </body>
 </html>
